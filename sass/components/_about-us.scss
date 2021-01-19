@@ -1,0 +1,73 @@
+.about-us {
+  @include paddingContainer(84px);
+}
+
+.about-us-subtitle {
+  margin-bottom: 20px;
+}
+
+.about-us-subtitle .icon {
+  fill: currentColor;
+  margin-right: 20px;
+}
+
+.about-us-subtitle .subtitle-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.about-us-title {
+  margin-bottom: 20px;
+  max-width: 330px;
+
+  color: #303030;
+  font-family: Raleway;
+  font-size: 28px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+}
+
+.about-us-paragraph {
+  margin-bottom: 20px;
+
+  color: #555555;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.02em;
+}
+
+.about-us-text {
+  margin-bottom: 40px;
+
+  color: #555555;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+}
+
+.about-us .online-appointment {
+  display: inline-block;
+  padding: 12px 20px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: #303030;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+
+  transition: background-color $transitionParameter, color $transitionParameter;
+}
+
+.about-us .online-appointment:hover,
+.about-us .online-appointment:focus {
+  color: #ffffff;
+  background-color: $hoverColor;
+}

@@ -1,0 +1,17 @@
+@import './utils/breakpoints';
+@import './utils/variables';
+@import './utils/placeholders';
+@import './utils/mixins';
+
+@import './components/base';
+
+@import './components/header';
+
+@import './components/hero';
+@import './components/about-us';
+@import './components/prices';
+@import './components/rewards';
+@import './components/masters';
+@import './components/information';
+
+@import './components/footer';

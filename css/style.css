@@ -1,0 +1,321 @@
+/* Макросики */
+:root {
+  --primary-text-color: #303030;
+  --secondary-text-color: #ff6c00;
+  --inside-text-color: #555555;
+  --front-text-color: #9da4bd;
+  --front-text-color-transparent: rgba(157, 164, 189, 0.6);
+}
+
+/* Тельце */
+body {
+  color: var(--primary-text-color);
+  background-color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Сбросы */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+/*! HEADER */
+/* Навигация */
+.main-nav {
+  background-color: #000000;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+}
+
+.main-nav a {
+  color: #ffffff;
+}
+
+.main-nav a:hover,
+.hero-contacts a:hover {
+  color: var(--secondary-text-color);
+}
+
+.nav-contacts .online {
+  display: inline-block;
+  padding: 12px 20px;
+  min-width: 120px;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.nav-contacts .online:hover {
+  color: #ffffff;
+  background-color: var(--secondary-text-color);
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+}
+
+/*! MAIN */
+/* Hero */
+.hero {
+  background-color: #000000;
+}
+
+.hero-contacts {
+  background-color: #ffffff;
+}
+
+.hero-contacts a {
+  color: var(--primary-text-color);
+}
+
+.hero-contacts:hover {
+  color: var(--secondary-text-color);
+}
+
+.hero-description .transparent {
+  color: var(--front-text-color-transparent);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 72px;
+  line-height: 1.13;
+  letter-spacing: 0.05em;
+}
+
+.hero-description p {
+  color: var(--front-text-color);
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+.hero-buttons li::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 5px;
+  background: rgb(255, 6, 6);
+  margin-bottom: 5px;
+}
+
+/* О нас */
+.about-us .subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.about-us h2 {
+  font-family: Raleway;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
+.about-us .paragraph {
+  color: #555555;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+.about-us .text {
+  color: #555555;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+}
+
+.about-us .online {
+  display: inline-block;
+  color: #303030;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 12px 20px;
+  min-width: 120px;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+}
+
+.about-us .online:hover {
+  color: #ffffff;
+  background-color: var(--secondary-text-color);
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+}
+
+/* Прайсы */
+.prices {
+  background-color: #000000;
+}
+
+.prices .subtitle {
+  color: var(--front-text-color-transparent);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.prices h2 {
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
+.prices .list {
+  color: var(--front-text-color);
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+.prices .online {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 12px 20px;
+  min-width: 120px;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+}
+
+.prices .online:hover {
+  color: #ffffff;
+  background-color: var(--secondary-text-color);
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+}
+
+/* Награды */
+.rewards-big-text {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  letter-spacing: 0.05em;
+}
+
+.rewards-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+}
+
+.plus {
+  color: #ff6c00;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.38;
+}
+
+.rewards .subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.rewards h2 {
+  font-family: Raleway;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
+.rewards .paragraph {
+  color: #555555;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+/* Наши мастера */
+.masters {
+  background-color: #f7f7f7;
+}
+
+.masters .subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.masters h2 {
+  font-family: Raleway;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
+.masters h3 {
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.02em;
+}
+
+.masters .barber {
+  color: #ff6c00;
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.02em;
+}
+
+/* Дополнительная информация */
+.additional-information .subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}

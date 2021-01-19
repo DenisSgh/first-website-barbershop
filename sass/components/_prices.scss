@@ -1,0 +1,84 @@
+.prices {
+  @include paddingContainer(84px);
+  height: 826px;
+
+  background: #111319;
+  // background-image: url('../image/img.png');
+}
+
+.prices-subtitle {
+  margin-bottom: 20px;
+}
+
+.prices-subtitle .icon {
+  fill: $frontTextColorTransparent;
+  margin-right: 20px;
+}
+
+.prices-subtitle .subtitle-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $frontTextColorTransparent;
+}
+
+.prices-title {
+  margin-bottom: 44px;
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.prices-list-container {
+  margin-bottom: 50px;
+  padding: 30px;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(23, 26, 36, 1),
+    rgba(23, 26, 36, 0.2)
+  );
+}
+
+.prices-list {
+  color: $frontTextColor;
+  font-size: 14px;
+  line-height: 2.14;
+  letter-spacing: 0.02em;
+}
+
+.prices-list .item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.prices .online-appointment {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px 20px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: #ffffff;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+
+  transition: background-color $transitionParameter;
+}
+
+.prices .online-appointment:hover,
+.prices .online-appointment:focus {
+  background-color: $hoverColor;
+}
