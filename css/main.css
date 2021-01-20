@@ -216,7 +216,6 @@ img {
 
 .prices {
   padding: 84px 0;
-  height: 826px;
   background: #111319;
 }
 
@@ -292,5 +291,122 @@ img {
 .prices .online-appointment:hover,
 .prices .online-appointment:focus {
   background-color: #ff6c00;
+}
+
+.achievements {
+  padding: 84px 0;
+}
+
+.achievements .container {
+  padding-bottom: 30px;
+}
+
+.achievements-subtitle {
+  margin-bottom: 20px;
+}
+
+.achievements-subtitle .icon {
+  fill: currentColor;
+  margin-right: 20px;
+}
+
+.achievements-subtitle .subtitle-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.achievements-title {
+  margin-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
+.achievements-paragraph {
+  margin-bottom: 44px;
+  color: #555555;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+.achievements-list {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 1px;
+}
+
+.achievements-list .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px 35px;
+  text-align: center;
+  width: 193px;
+  background: #f7f7f7;
+}
+
+.achievements-list .item:nth-child(2) {
+  position: absolute;
+  top: 30px;
+  left: 225px;
+  padding: 20px 36px;
+  margin-bottom: 30px;
+}
+
+.achievements-list .item:nth-child(4) {
+  position: absolute;
+  top: 185px;
+  left: 225px;
+  padding: 20px 32px;
+}
+
+.achievements-list .item:not(:nth-child(2n)) {
+  margin-right: 30px;
+}
+
+.achievements-list .item:first-child {
+  margin-bottom: 30px;
+}
+
+.achievements-value {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  letter-spacing: 0.05em;
+}
+
+.achievements-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+}
+
+.plus {
+  margin-top: 7px;
+  color: #ff6c00;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.38;
 }
 /*# sourceMappingURL=main.css.map */
