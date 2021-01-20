@@ -4,6 +4,10 @@
 
 .achievements .container {
   padding-bottom: 30px;
+
+  @media screen and (max-width: 465px) {
+    padding-bottom: 155px;
+  }
 }
 
 .achievements-subtitle {
@@ -61,30 +65,38 @@
   padding: 20px 35px;
   text-align: center;
 
-  width: 193px;
+  max-width: 193px;
   background: #f7f7f7;
 
   &:nth-child(2) {
     position: absolute;
     top: 30px;
-    left: 225px;
+    right: 0;
     padding: 20px 36px;
     margin-bottom: 30px;
+
+    @media screen and (max-width: 465px) {
+      top: 155px;
+    }
   }
 
   &:nth-child(4) {
     position: absolute;
     top: 185px;
-    left: 225px;
+    right: 0;
     padding: 20px 32px;
-  }
 
-  &:not(:nth-child(2n)) {
-    margin-right: 30px;
+    @media screen and (max-width: 465px) {
+      top: 465px;
+    }
   }
 
   &:first-child {
     margin-bottom: 30px;
+
+    @media screen and (max-width: 465px) {
+      margin-bottom: 185px;
+    }
   }
 }
 

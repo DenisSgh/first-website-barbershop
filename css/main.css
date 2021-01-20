@@ -301,6 +301,12 @@ img {
   padding-bottom: 30px;
 }
 
+@media screen and (max-width: 465px) {
+  .achievements .container {
+    padding-bottom: 155px;
+  }
+}
+
 .achievements-subtitle {
   margin-bottom: 20px;
 }
@@ -362,31 +368,45 @@ img {
       flex-wrap: wrap;
   padding: 20px 35px;
   text-align: center;
-  width: 193px;
+  max-width: 193px;
   background: #f7f7f7;
 }
 
 .achievements-list .item:nth-child(2) {
   position: absolute;
   top: 30px;
-  left: 225px;
+  right: 0;
   padding: 20px 36px;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 465px) {
+  .achievements-list .item:nth-child(2) {
+    top: 155px;
+  }
 }
 
 .achievements-list .item:nth-child(4) {
   position: absolute;
   top: 185px;
-  left: 225px;
+  right: 0;
   padding: 20px 32px;
 }
 
-.achievements-list .item:not(:nth-child(2n)) {
-  margin-right: 30px;
+@media screen and (max-width: 465px) {
+  .achievements-list .item:nth-child(4) {
+    top: 465px;
+  }
 }
 
 .achievements-list .item:first-child {
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 465px) {
+  .achievements-list .item:first-child {
+    margin-bottom: 185px;
+  }
 }
 
 .achievements-value {
@@ -408,5 +428,69 @@ img {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.38;
+}
+
+.masters {
+  padding: 84px 0;
+  background-color: #f7f7f7;
+}
+
+.masters-subtitle {
+  margin-bottom: 20px;
+}
+
+.masters-subtitle .icon {
+  fill: currentColor;
+  margin-right: 20px;
+}
+
+.masters-subtitle .subtitle-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.masters-title {
+  margin-bottom: 44px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
+.masters-name {
+  margin-top: 30px;
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.masters-profession {
+  margin-bottom: 30px;
+  color: #ff6c00;
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.masters-photo {
+  width: 100%;
+}
+
+.masters-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=main.css.map */
