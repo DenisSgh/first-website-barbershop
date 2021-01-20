@@ -1,0 +1,30 @@
+.additional-information {
+  @include paddingContainer(84px);
+}
+
+.information-subtitle {
+  margin-bottom: 44px;
+}
+
+.information-subtitle .icon {
+  fill: currentColor;
+  margin-right: 20px;
+}
+
+.information-subtitle .subtitle-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.information-list .item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.information-photo {
+  width: 100%;
+}

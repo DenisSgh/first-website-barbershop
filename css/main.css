@@ -430,9 +430,8 @@ img {
   line-height: 1.38;
 }
 
-.masters {
+.additional-information {
   padding: 84px 0;
-  background-color: #f7f7f7;
 }
 
 .masters-subtitle {
@@ -460,6 +459,10 @@ img {
   letter-spacing: 0.05em;
 }
 
+.masters-list .masters-item:not(:last-child) {
+  margin-bottom: 64px;
+}
+
 .masters-name {
   margin-top: 30px;
   margin-bottom: 8px;
@@ -482,7 +485,7 @@ img {
   width: 100%;
 }
 
-.masters-list {
+.masters-link-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -492,5 +495,67 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.masters-link-list .link-item {
+  margin-right: 10px;
+}
+
+.masters-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: currentColor;
+  background-color: #fff;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.masters-link:hover,
+.masters-link:focus {
+  fill: #fff;
+  background-color: #ff6c00;
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.additional-information {
+  padding: 84px 0;
+}
+
+.information-subtitle {
+  margin-bottom: 44px;
+}
+
+.information-subtitle .icon {
+  fill: currentColor;
+  margin-right: 20px;
+}
+
+.information-subtitle .subtitle-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.information-list .item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.information-photo {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

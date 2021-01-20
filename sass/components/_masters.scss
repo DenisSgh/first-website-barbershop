@@ -1,6 +1,5 @@
-.masters {
+.additional-information {
   @include paddingContainer(84px);
-  background-color: #f7f7f7;
 }
 
 .masters-subtitle {
@@ -29,6 +28,12 @@
   letter-spacing: 0.05em;
 }
 
+.masters-list .masters-item {
+  &:not(:last-child) {
+    margin-bottom: 64px;
+  }
+}
+
 .masters-name {
   margin-top: 30px;
   margin-bottom: 8px;
@@ -53,8 +58,35 @@
   width: 100%;
 }
 
-.masters-list {
+.masters-link-list {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.masters-link-list .link-item {
+  margin-right: 10px;
+}
+
+.masters-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  fill: currentColor;
+  background-color: #fff;
+
+  transition: fill $transitionParameter, background-color $transitionParameter,
+    transform $transitionParameter;
+}
+
+.masters-link:hover,
+.masters-link:focus {
+  fill: #fff;
+  background-color: $hoverColor;
+  transform: scale(1.25);
 }
